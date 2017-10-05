@@ -1,0 +1,41 @@
+welcome: # this is the #welcome bloc referenced in index.js
+  - text: # Picks one randomly
+      - Hey come va?
+      - Ciao
+      - Buongiorno :)
+    typing: 1s  
+
+askUserEmail:
+  - text: Inserisci la tua email.
+
+askUserEmail_reply:
+  - text: Grazie. La terrò a mente {{email}}
+    typing: 1s
+
+wrongEmail:
+  - text: Email non corretta.
+    typing: 2s
+
+choiceNewsletter:
+  - text: A quale newsletter vuoi iscrivere l'utente? 1) Nuovo di fabbrica 2) MultiUx newsletter 3) XuniPlay newsletter
+    typing: 2s
+
+fabbricaResponse:
+  - text: Ok! Abbiamo iscritto {{email}} alla newsletter Nuovo di Fabbrica.
+
+multiuxResponse:
+  - text: Ok! Abbiamo iscritto {{email}} alla newsletter MultiUx.
+
+xuniplayResponse:
+  - text: Ok! Abbiamo iscritto {{email}} alla newsletter Xuniplay.
+
+wrongChoice:
+  - text: Non ho capito la risposta. Prego riprova.
+
+goodbye:
+  - text: You are leaving because of reason {{reason}}
+    typing: true
+  - Hope to see you back again soon! # if no other properties, you can just send a strings
+
+request:
+  - text: ECCO QUI {{req}}  
